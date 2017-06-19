@@ -1,5 +1,7 @@
 ## User Stories
 
+![travis-build-logo](https://travis-ci.org/whatsrupp/colour-think.svg?branch=master)
+
 The MVP was defined by the following user stories
 
 ```
