@@ -20,6 +20,11 @@ describe RandomWord do
     :water]}
 
     describe '#get' do
+
+      it 'contains the right words' do
+        random_word = RandomWord.new
+        expect(random_word.random_words).to eq random_words
+      end
       it 'makes a call to sample' do
         random_word = RandomWord.new
         expect(random_word.random_words).to receive :sample
