@@ -3,6 +3,10 @@ require 'json'
 # Makes calls to the Google CSE api
 class Google
 
+  def initialize(query_url)
+    @query_url = query_url
+  end
+
   def search
     response_hash = JSON.parse(dummy)
   end

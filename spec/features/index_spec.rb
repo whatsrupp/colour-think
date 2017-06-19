@@ -12,13 +12,13 @@ feature 'User goes to the homepage' do
 
   scenario 'the coloured squares direct to the approprite href' do
     visit '/'
-    expect(page).to have_xpath("//a[@href='/searches/red']")
-    expect(page).to have_xpath("//a[@href='/searches/pink']")
-    expect(page).to have_xpath("//a[@href='/searches/yellow']")
-    expect(page).to have_xpath("//a[@href='/searches/blue']")
-    expect(page).to have_xpath("//a[@href='/searches/green']")
-    expect(page).to have_xpath("//a[@href='/searches/orange']")
-    expect(page).to have_xpath("//a[@href='/searches/purple']")
+    expect(page).to have_xpath("//form[@action='/search/red']")
+    expect(page).to have_xpath("//form[@action='/search/pink']")
+    expect(page).to have_xpath("//form[@action='/search/yellow']")
+    expect(page).to have_xpath("//form[@action='/search/blue']")
+    expect(page).to have_xpath("//form[@action='/search/green']")
+    expect(page).to have_xpath("//form[@action='/search/orange']")
+    expect(page).to have_xpath("//form[@action='/search/purple']")
   end
 
 end

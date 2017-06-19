@@ -14,7 +14,7 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-06-19T21:28:30+01:00">2017-06-19T21:28:30+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-06-20T00:11:23+01:00">2017-06-20T00:11:23+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -31,9 +31,9 @@
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>6</b> files in total.
-    <b>56</b> relevant lines. 
-    <span class="green"><b>56</b> lines covered</span> and
+    <b>7</b> files in total.
+    <b>66</b> relevant lines. 
+    <span class="green"><b>66</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -61,6 +61,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#64dc4a2c9d37591bfa096997f8fb947ecfa8dfbe" class="src_link" title="spec/features/search_spec.rb">spec/features/search_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>16</td>
+        <td>9</td>
+        <td>9</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#170f3fc33859f86dd2740d5478fe6cd5bb4b386a" class="src_link" title="spec/initial_spec.rb">spec/initial_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>8</td>
@@ -73,9 +83,9 @@
       <tr>
         <td class="strong"><a href="#85b54e308c7a5fc4c81952f04424aab50e3b4443" class="src_link" title="spec/models/google_spec.rb">spec/models/google_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>10</td>
-        <td>5</td>
-        <td>5</td>
+        <td>11</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -227,43 +237,43 @@
         <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_xpath(&quot;//a[@href=&#39;/searches/red&#39;]&quot;)</code>
+          <code class="ruby">    expect(page).to have_xpath(&quot;//form[@action=&#39;/search/red&#39;]&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_xpath(&quot;//a[@href=&#39;/searches/pink&#39;]&quot;)</code>
+          <code class="ruby">    expect(page).to have_xpath(&quot;//form[@action=&#39;/search/pink&#39;]&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_xpath(&quot;//a[@href=&#39;/searches/yellow&#39;]&quot;)</code>
+          <code class="ruby">    expect(page).to have_xpath(&quot;//form[@action=&#39;/search/yellow&#39;]&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_xpath(&quot;//a[@href=&#39;/searches/blue&#39;]&quot;)</code>
+          <code class="ruby">    expect(page).to have_xpath(&quot;//form[@action=&#39;/search/blue&#39;]&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_xpath(&quot;//a[@href=&#39;/searches/green&#39;]&quot;)</code>
+          <code class="ruby">    expect(page).to have_xpath(&quot;//form[@action=&#39;/search/green&#39;]&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_xpath(&quot;//a[@href=&#39;/searches/orange&#39;]&quot;)</code>
+          <code class="ruby">    expect(page).to have_xpath(&quot;//form[@action=&#39;/search/orange&#39;]&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_xpath(&quot;//a[@href=&#39;/searches/purple&#39;]&quot;)</code>
+          <code class="ruby">    expect(page).to have_xpath(&quot;//form[@action=&#39;/search/purple&#39;]&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
@@ -279,6 +289,121 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="64dc4a2c9d37591bfa096997f8fb947ecfa8dfbe">
+  <div class="header">
+    <h3>spec/features/search_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>9</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">feature &#39;User goes to the homepage&#39; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  scenario &#39;get requests to the page generate a search query&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    allow(Array).to receive(:sample).and_return(:bird)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit &#39;/search/pink/bird&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_xpath(&quot;//img[@src=&#39;https://www.skibluemt.com/media/1106/hero-09.jpg&#39;]&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_xpath(&quot;//img[@src=&#39;http://www.snow-forecast.com/pistemaps/Blue-Mountain_pistemap_full.jpg&#39;]&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_xpath(&quot;//img[@src=&#39;http://travelinnate.com/wp-content/uploads/2016/05/Blue-Mountain-3.jpg&#39;]&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_xpath(&quot;//img[@src=&#39;http://www.snow-forecast.com/pistemaps/Blue-Mountain-Ski-Area_pistemap_full.jpg&#39;]&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_xpath(&quot;//img[@src=&#39;https://www.skibluemt.com/media/1504/blue-mountain-ski-map111714web.jpg&#39;]&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">end</code>
@@ -361,8 +486,8 @@
     <h3>spec/models/google_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>5</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -409,22 +534,28 @@
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">    google = Google.new()</code>
+          <code class="ruby">    string = &#39;dummy&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
+          <code class="ruby">    google = Google.new(string )</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
           <code class="ruby">    google.search</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">end</code>

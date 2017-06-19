@@ -8,9 +8,11 @@
 
   <% @colours.each do |colour|%>
     <div class='cell coloured' id='<%=colour%>-square'>
-      <a class='square' href='/searches/<%=colour%>'>
-        <div class='link-placeholder'></div>
-      </a>
+      <form class='colour-form' action='/search/<%=colour%>' method='post'>
+        <a class='square' id='<%=colour%>-link' href="javascript:;" onclick="parentNode.submit();">
+          <div class='link-placeholder'></div>
+        </a>
+      </form>
     </div>
   <%end%>
 
@@ -18,4 +20,4 @@
   </div>
 </div>
 
-<p id='description'>CLICK THE COLOURS FOR INSPIRATION</p>
+<p id='description'>click the colours for inspiration</p>

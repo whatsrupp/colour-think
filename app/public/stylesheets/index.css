@@ -1,0 +1,121 @@
+/*Pink #fbb6d3
+Yellow #fffa82
+Blue #9bcee1
+Green #b6e0ae
+Orange #fecaa3
+Red 	#ff6961
+Purple #c1b3d7*/
+
+/**{
+  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Tenor Sans', sans-serif;
+}*/
+
+html{
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: #303030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+#squares-container {
+  display: flex;                       /* establish flex container */
+  flex-wrap: wrap;                     /* enable flex items to wrap */
+  justify-content: space-around;
+  height: 500px;
+  width: 500px;
+}
+
+#title{
+  color:#e3e3e3;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 3em;
+
+}
+
+#description{
+  color:#e3e3e3;
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 2em;
+
+}
+
+.square {
+  width: 100%;
+  height: 100%;
+}
+
+.link-placeholder{
+  width: 100%;
+  height: 100%;
+}
+.colour-form{
+  width: 100%;
+  height: 100%;
+}
+.cell {
+  flex: 0 0 30%;
+  /*width: 32%;                       /* don't grow, don't shrink, width */*/
+  height: 50px;
+  margin-bottom: 5px;
+  background-color: #999;
+  border-radius: 3px;
+  border-left:4px solid #202020;
+  border-bottom:4px solid #202020;
+}
+
+.cell#red-square{
+  background-color: #ff6961
+}
+
+.cell#yellow-square{
+  background-color:#fffa82
+}
+.cell#pink-square{
+  background-color:#fbb6d3
+}
+.cell#blue-square{
+  background-color: #9bcee1
+}
+.cell#green-square{
+  background-color: #b6e0ae
+}
+.cell#orange-square{
+  background-color: #fecaa3
+}
+.cell#purple-square{
+  background-color: #c1b3d7
+}
+
+.cell.coloured:hover{
+  border-left:1px solid #202020;
+  border-bottom:1px solid #202020;
+}
+.cell#red-square:hover{
+  background-color: #ef5951
+}
+
+.cell#yellow-square:hover{
+  background-color:#efea72
+}
+.cell#pink-square:hover{
+  background-color:#eba6c3
+}
+.cell#blue-square:hover{
+  background-color: #8bbed1
+}
+.cell#green-square:hover{
+  background-color: #a6d09e
+}
+.cell#orange-square:hover{
+  background-color: #eeba93
+}
+.cell#purple-square:hover{
+  background-color: #b1a3c7
+}

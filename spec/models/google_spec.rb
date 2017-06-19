@@ -4,7 +4,8 @@ describe Google do
   end
 
   it 'returns a parsed json' do
-    google = Google.new()
+    string = 'dummy'
+    google = Google.new(string )
     google.search
   end
 end
