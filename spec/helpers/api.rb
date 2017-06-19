@@ -1,3 +1,4 @@
+# Contains a raw json response from api call and processed response
 module ApiHelper
   def mocked_json_response
     '{

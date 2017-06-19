@@ -1,8 +1,6 @@
 
 describe SearchResponse do
 
-
-
   describe '#extract' do
     it 'extracts all the image URLS from the JSON output' do
       urls = [ "https://www.skibluemt.com/media/1106/hero-09.jpg",

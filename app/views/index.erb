@@ -1,1 +1,21 @@
-<h1>Hello World</h1>
+
+
+<p id='title'>COLOUR THINK</p>
+<div id='squares-container'>
+
+  <div class='cell'>
+  </div>
+
+  <% @colours.each do |colour|%>
+    <div class='cell coloured' id='<%=colour%>-square'>
+      <a class='square' href='/searches/<%=colour%>'>
+        <div class='link-placeholder'></div>
+      </a>
+    </div>
+  <%end%>
+
+  <div class='cell'>
+  </div>
+</div>
+
+<p id='description'>CLICK THE COLOURS FOR INSPIRATION</p>
