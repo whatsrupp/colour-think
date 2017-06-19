@@ -1,6 +1,67 @@
-## User Stories
+# Colour Think
 
 ![travis-build-logo](https://travis-ci.org/whatsrupp/colour-think.svg?branch=master)
+
+A web app designed to provide creative inspiration through random Google image searches and colours.  
+
+***
+
+# Set Up
+## Online
+The live site is probably the easiest way to check this out. If it's still being
+deployed by Heroku you can find it [here](https://colour-think.herokuapp.com/)
+
+
+## Offline
+Chances are that quite soon in the future this will be pulled off heroku, so if it is there is an offline option.
+
+#### Clone this repository
+
+```
+ $ cd /wherever/you/want/to/clone/colour-think
+ $ git clone https://github.com/whatsrupp/colour-think
+```
+
+#### Set up your Google Custom Search API Key
+
+This project uses the Google custom search API which requires an account and a key. Unfortunately it's capped at 100 queries a day so I ain't sharing! Luckily, it's simple to set up your own. Head to the API help below and generate your own key.
+
+[Custom Search JSON API overview page](https://developers.google.com/custom-search/json-api/v1/overview)
+
+The image below may help
+
+
+![google-api-image-help](docs/google-api-key-help.png)
+
+#### Configuring an env.rb file
+To use the search API you'll need to integrate your api key into the app. The following commands will do that for you. NB the key used here is an example of what yours should look like
+
+```
+$ touch colour-think/app/env.rb
+$ echo "ENV['google_search_key'] = 'Ibsjycak-4QEUFPq7eI0a85-tNvqwsk8fyqxEs'" >> colour-think/app/env.rb
+```
+
+#### Run the app
+This a rack application. Run rackup in the terminal and it should set up a local server
+```
+$ rackup
+```
+
+you should then see something alon the lines of
+```
+* Version 3.9.1 (ruby 2.3.3-p222), codename: Private Caller
+* Min threads: 0, max threads: 16
+* Environment: development
+* Listening on tcp://localhost:9292
+Use Ctrl-C to stop
+```
+
+#### Open the local host on the browser
+This [link](http://localhost:9292/) will direct you to the appropriate local host.
+```
+http://localhost:9292/
+```
+## User Stories
 
 The MVP was defined by the following user stories
 
