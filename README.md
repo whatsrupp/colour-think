@@ -38,7 +38,6 @@ So that I can return to my previous searches
 I want to see a chronological list of historic searches
 ```
 
-
 ```
 As a User
 So that I can have information about old searches

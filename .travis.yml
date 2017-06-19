@@ -1,0 +1,4 @@
+rvm: '2.3.3'
+
+script:
+  - mkdir -p spec && bundle exec rspec spec
