@@ -14,11 +14,8 @@ class Query
     query = "q=" + colour + "%20" + random_word + "&"
     search_engine_id = 'cx='+ ENV['SEARCH_ENGINE_ID'] + "&"
     search_type = 'searchType=image'
-    # require 'pry';binding.pry
     number_search_results = 'num=' + MAX_SEARCH_RESULTS.to_s + '&'
-
     base_url + query + key + number_search_results + search_engine_id + search_type
-
   end
 
   private

@@ -6,3 +6,4 @@ require_relative 'controllers/index'
 
 require_relative 'models/google'
 require_relative 'models/query'
+require_relative 'models/random_word'
