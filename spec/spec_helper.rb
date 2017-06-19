@@ -7,3 +7,6 @@ require 'rspec'
 require './app/app'
 
 Capybara.app = ColourThink
+
+require 'simplecov'
+SimpleCov.start

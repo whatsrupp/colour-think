@@ -1,0 +1,30 @@
+{
+  "RSpec": {
+    "coverage": {
+      "C:/Users/Nick/coding-projects/colour-think/spec/features/index_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "C:/Users/Nick/coding-projects/colour-think/spec/initial_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "C:/Users/Nick/coding-projects/colour-think/spec/models/search_spec.rb": [
+
+      ]
+    },
+    "timestamp": 1497878638
+  }
+}

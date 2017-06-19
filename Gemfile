@@ -7,9 +7,9 @@ gem 'sinatra'
 group :test do
   gem 'rspec'
   gem 'rake'
-  gem 'coveralls', require: false
   gem 'reek'
   gem 'pry'
   gem 'capybara'
   gem 'selenium-webdriver'
+  gem 'simplecov'
 end
