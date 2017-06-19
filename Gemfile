@@ -3,6 +3,7 @@ source "https://rubygems.org"
 ruby '2.3.3'
 
 gem 'sinatra'
+gem 'httparty'
 
 group :test do
   gem 'rspec'

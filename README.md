@@ -13,7 +13,7 @@ deployed by Heroku you can find it [here](https://colour-think.herokuapp.com/)
 
 
 ## Offline
-Chances are that quite soon in the future this will be pulled off heroku, so if it is there is an offline option.
+Chances are that quite soon in the future this will be pulled off heroku, so if it is there is an offline option. Although, it's far more tedious than just clicking an active link.
 
 #### Clone this repository
 
@@ -57,6 +57,7 @@ Use Ctrl-C to stop
 ```
 
 #### Open the local host on the browser
+If you've made it this far all you need to do is open up the local server with a browser.
 This [link](http://localhost:9292/) will direct you to the appropriate local host.
 ```
 http://localhost:9292/
