@@ -1,10 +1,28 @@
 <h1>Search</h1>
+<div class='image-container'>
+  <%@image_urls.each_with_index do |url,i |%>
+    <%if i==0%>
+    <div class='image-cell large-image'>
+      <a class='image-link' href="<%=url%>">
+        <img class='image-result'src="<%=url%>">
+      </a>
+    </div>
 
-<%@image_urls.each do |url|%>
-  <a class='image-link' href="<%=url%>">
-    <img class='image-result'src="<%=url%>">
-  </a>
-<%end%>
+    <%else%>
+    <div class='image-cell small-image'>
+      <a class='image-link' href="<%=url%>">
+        <img class='image-result'src="<%=url%>">
+      </a>
+    </div>
+    <%end%>
+  <%end%>
+
+  <div class='image-cell large-image'>
+    <a id='home-link' href="/">
+      New Search
+    </a>
+  </div>
+</div>
 
 <%@previous_searches.each do |search_info|%>
   <%colour= search_info.colour%>

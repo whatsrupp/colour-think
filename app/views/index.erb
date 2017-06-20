@@ -3,10 +3,11 @@
 <p id='title'>COLOUR THINK</p>
 <div id='squares-container'>
 
-  <div class='cell'>
+  <div class='cell text'>
+    <p id='description'>Click the colours for inspiration</p>
   </div>
 
-  <% @colours.each do |colour|%>
+  <% @colours.each_with_index do |colour, i|%>
     <div class='cell coloured' id='<%=colour%>-square'>
       <form class='colour-form' action='/search/<%=colour%>' method='post'>
         <a class='square' id='<%=colour%>-link' href="javascript:;" onclick="parentNode.submit();">
@@ -19,5 +20,3 @@
   <div class='cell'>
   </div>
 </div>
-
-<p id='description'>click the colours for inspiration</p>
