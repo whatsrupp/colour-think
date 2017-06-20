@@ -16,9 +16,9 @@ class Google
   end
 
   def search
-    # https_get_request
-    # return @response.body
-    dummy
+    return dummy if ENV['RACK_ENV']=='test'
+    https_get_request
+    return @response.body
   end
 
   def https_get_request
