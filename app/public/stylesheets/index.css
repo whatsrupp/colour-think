@@ -1,12 +1,15 @@
 html{
   height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
 }
 body{
   background-color: #303030;
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content:center;
   height: 90%;
   width: 100%;
   flex-direction: column;
@@ -17,22 +20,32 @@ body{
   display: flex;
   flex-wrap: wrap;
   /*justify-content: space-around;*/
-  height: 50vw;
-  width: 50vw;
+  height: 800px;
+  width: 750px;
+}
+
+@media (max-width: 750px) {
+  #squares-container {
+    /*justify-content: space-around;*/
+    height: 300px;
+    width: 300px;
+
+  }
 }
 
 #title{
   color:#e3e3e3;
   font-family: 'Archivo Black', sans-serif;
-  font-size: 3em;
+  font-size: 50px;
 
 }
 
-#description{
+.description{
   color:#e3e3e3;
   font-family: 'Tenor Sans', sans-serif;
   font-size: 1em;
-
+  text-align: center;
+  padding: 5px;
 }
 
 .square {
@@ -59,8 +72,12 @@ body{
   flex: 1;
   flex-basis: 28%;
   height:30%;
-
-  margin-bottom: 5px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  margin-left: 2px;
   background-color: #999;
   border-radius: 3px;
   border-left:4px solid #202020;

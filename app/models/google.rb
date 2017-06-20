@@ -16,7 +16,8 @@ class Google
   end
 
   def search
-    return dummy if ENV['RACK_ENV']=='test'
+    return stubbed_response if ENV['RACK_ENV']=='test'
+    # stubbed_response
     https_get_request
     return @response.body
   end
@@ -45,7 +46,7 @@ class Google
     http
   end
 
-  def dummy
+  def stubbed_response
     '{
      "kind": "customsearch#search",
      "url": {
