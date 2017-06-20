@@ -25,10 +25,16 @@ feature 'User goes to the image display page' do
     visit '/search/red/castle'
     visit '/search/green/road'
 
-    expect(page).to have_xpath("//a[@href='/search/pink/bird']")
-    expect(page).to have_xpath("//a[@href='/search/red/castle']")
-    expect(page).to have_xpath("//a[@href='/search/green/road']")
+    expect(page).to have_xpath("//a[@href='/search/history/0']")
+    expect(page).to have_xpath("//a[@href='/search/history/1']")
+    expect(page).to have_xpath("//a[@href='/search/history/2']")
 
+  end
+
+  scenario 'clicking through on history doesnt re run the http request' do
+    expect{visit '/search/pink/bird'}.to change{History.read.length}.by(1)
+    expect{click_link 'history-link-0'}.to_not change{History.read.length}
+    expect(current_path).to eq '/search/history/0'
   end
 
 

@@ -7,5 +7,9 @@
 <%end%>
 
 <%@previous_searches.each do |search_info|%>
-  <a href="/search/<%=search_info.colour%>/<%=search_info.noun%>"><%=search_info.colour%> <%=search_info.noun%></a>
+  <%colour= search_info.colour%>
+  <%noun= search_info.noun%>
+  <%id = search_info.id%>
+
+  <a href="/search/history/<%=id%>" id='history-link-<%=id%>'><%=colour%> <%=noun%></a>
 <%end%>

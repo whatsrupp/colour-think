@@ -1,5 +1,11 @@
 # Controls routes associates with searches
 class ColourThink < Sinatra::Base
+  get '/search/history/:id' do
+    search_info= History.read[params[:id].to_i]
+    @image_urls = SearchResponse.new(search_info.http_response).urls
+    @previous_searches = History.read
+    erb :search
+  end
 
   get '/search/:colour/:word' do
     colour=params[:colour]
@@ -11,9 +17,9 @@ class ColourThink < Sinatra::Base
       noun: word,
       http: response
     })
-    History.add(search_info)
+    History.create(search_info)
     @image_urls = SearchResponse.new(response).urls
-    @previous_searches = History.show
+    @previous_searches = History.read
     erb :search
   end
 

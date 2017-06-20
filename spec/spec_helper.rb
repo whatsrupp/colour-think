@@ -21,4 +21,8 @@ SimpleCov.start
 
 RSpec.configure do |config|
   config.include ApiHelper
+
+  config.before(:each) do
+    require './app/app'
+  end
 end
