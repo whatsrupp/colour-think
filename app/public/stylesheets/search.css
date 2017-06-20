@@ -12,10 +12,10 @@
 }
 
 #search-again{
-  color:#e3e3e3;
+  color:##303030;
   font-family: 'Tenor Sans', sans-serif;
   font-size: 1em;
-
+  text-decoration: none;
 }
 
 #return-button{
@@ -32,6 +32,9 @@
   /*justify-content: space-around;*/
   height: 40vw;
   width: 40vw;
+  border-radius: 3px;
+  margin-bottom: 50px;
+
 }
 
 .large-row{
@@ -67,5 +70,77 @@
   flex:1;
   overflow: hidden;
 
-  /*flex-basis: 30%;*/
+}
+
+.cell-label{
+  color: #303030;
+  font-family: 'Tenor Sans', sans-serif;
+
+}
+
+.small-cell:hover{
+  opacity: 0.9;
+}
+.large-cell:hover{
+  opacity: 0.9;
+}
+
+.search-cell.label{
+  background-color: #a3a3a3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.control{
+  width: 10%;
+}
+.control:hover{
+  opacity: 0.9;
+}
+#generated-searches{
+  display: flex;
+  width:40%;
+  overflow: hidden;
+
+}
+
+#previous-searches-container{
+  display:flex;
+  width: 80%;
+  height: 15%;
+  margin: auto;
+  justify-content: center;
+}
+.history-info{
+  height: 100%;
+  width: 100%;
+}
+
+#home-link,#home-link:visited{
+  color:#303030;
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+}
+.search-cell{
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.time, .date{
+  color:#303030;
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 0.9em;
+}
+
+.history-link,.history-link:visited{
+  text-decoration:none;
+  text-align: center;
+  color:#303030;
+  font-family: 'Tenor Sans', sans-serif;
 }

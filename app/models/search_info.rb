@@ -20,7 +20,7 @@ class SearchInfo
   end
 
   def date
-    @creation_time.strftime("%d:%m:%Y")
+    @creation_time.strftime("%d/%m/%Y")
   end
 
   private

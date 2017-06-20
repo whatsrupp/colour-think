@@ -14,13 +14,13 @@ describe SearchInfo do
         Timecop.freeze(Time.now)
         search_info = SearchInfo.new(arg_hash)
         expect(search_info.time).to eq (Time.now.strftime("%H:%M:%S"))
-        expect(search_info.date).to eq (Time.now.strftime("%d:%m:%Y"))
+        expect(search_info.date).to eq (Time.now.strftime("%d/%m/%Y"))
 
         Timecop.return
       end
 
       it 'assigns an id based on the class' do
-        
+
       end
 
     end

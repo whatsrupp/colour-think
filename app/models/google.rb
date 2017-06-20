@@ -17,6 +17,7 @@ class Google
 
   def search
     # https_get_request
+    # return @response.body
     dummy
   end
 
@@ -30,6 +31,7 @@ class Google
 
   def send_request
      @response= http.request(request)
+
   end
 
   def parse_uri(query_url)

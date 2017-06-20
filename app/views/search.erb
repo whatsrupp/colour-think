@@ -46,10 +46,35 @@
   </div>
 </div>
 
-<%@previous_searches.each do |search_info|%>
-  <%colour= search_info.colour%>
-  <%noun= search_info.noun%>
-  <%id = search_info.id%>
+<div id='previous-searches-container'>
+  <div class='search-cell label'>
+    <p class='cell-label'>History</p>
+  </div>
+  <div class='search-cell label control'>
+    <p class='cell-label' id='newer'>Newer</p>
+  </div>
+  <div id='generated-searches'>
+    <%@previous_searches.reverse.each do |search_info|%>
+      <%colour= search_info.colour%>
+      <%noun= search_info.noun%>
+      <%id = search_info.id%>
+      <%time = search_info.time%>
+      <%date = search_info.date%>
 
-  <a href="/search/history/<%=id%>" id='history-link-<%=id%>'><%=colour%> <%=noun%></a>
-<%end%>
+      <div class='search-cell <%=colour%>-square'>
+        <a href="/search/history/<%=id%>" class='history-link' id='history-link-<%=id%>'>
+          <div class='history-info'>
+            <p class='noun'><%=noun.upcase%></p>
+            <p class='time'><%=time%></p>
+            <p class='date'><%=date%></p>
+          </div>
+        </a>
+      </div>
+    <%end%>
+  </div>
+
+  <div class='search-cell label control' id='older'>
+    <p class='cell-label'>Older</p>
+  </div>
+
+</div>
