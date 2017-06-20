@@ -10,8 +10,8 @@ describe SearchResponse do
                "https://www.skibluemt.com/media/1504/blue-mountain-ski-map111714web.jpg"
              ]
 
-      parsed_response = ruby_response
-      search_response = SearchResponse.new(parsed_response)
+      json_response = mocked_json_response
+      search_response = SearchResponse.new(json_response)
       expect(search_response.urls).to eq urls
     end
   end

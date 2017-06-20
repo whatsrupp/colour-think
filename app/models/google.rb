@@ -1,14 +1,46 @@
 require 'json'
+require "net/https"
+require "uri"
 
 # Makes calls to the Google CSE api
 class Google
 
+  attr_reader :uri, :http, :request
+  attr_writer :response
+
   def initialize(query_url)
-    @query_url = query_url
+    @uri = parse_uri(query_url)
+    @http = set_up_request
+    @request = finalise_request
+    @response = nil
   end
 
   def search
-    response_hash = JSON.parse(dummy)
+    # https_get_request
+    dummy
+  end
+
+  def https_get_request
+    send_request
+  end
+
+  def finalise_request
+    Net::HTTP::Get.new(uri.request_uri)
+  end
+
+  def send_request
+     @response= http.request(request)
+  end
+
+  def parse_uri(query_url)
+    URI.parse(query_url)
+  end
+
+  def set_up_request
+    http = Net::HTTP.new(uri.host, uri.port)
+    http.use_ssl = true
+    http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+    http
   end
 
   def dummy

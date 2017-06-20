@@ -1,9 +1,14 @@
 ENV['RACK_ENV'] = 'test'
+ENV['CUSTOM_SEARCH_KEY'] = 'dummy-key'
+ENV['SEARCH_ENGINE_ID'] = 'dummy-id'
 
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
 require 'pry'
+require 'timecop'
+
+
 require_relative 'helpers/api'
 
 

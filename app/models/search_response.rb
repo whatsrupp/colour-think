@@ -1,8 +1,11 @@
+require 'json'
+
 class SearchResponse
 
   attr_reader :response
-  def initialize(parsed_json_response)
-    @response = parsed_json_response
+  
+  def initialize(json_response)
+    @response = JSON.parse(json_response)
   end
 
   def urls

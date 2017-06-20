@@ -29,8 +29,6 @@ GEM
     equalizer (0.0.11)
     ffi (1.9.18)
     ffi (1.9.18-x86-mingw32)
-    httparty (0.15.5)
-      multi_xml (>= 0.5.2)
     ice_nine (0.11.2)
     json (2.1.0)
     method_source (0.8.2)
@@ -38,7 +36,6 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mini_portile2 (2.2.0)
-    multi_xml (0.6.0)
     mustermann (1.0.0)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
@@ -93,6 +90,7 @@ GEM
     slop (3.6.0)
     thread_safe (0.3.6)
     tilt (2.0.7)
+    timecop (0.8.1)
     virtus (1.0.5)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -108,7 +106,6 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
-  httparty
   pry
   rake
   reek
@@ -116,6 +113,7 @@ DEPENDENCIES
   selenium-webdriver
   simplecov
   sinatra
+  timecop
 
 RUBY VERSION
    ruby 2.3.3p222

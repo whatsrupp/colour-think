@@ -12,8 +12,7 @@ describe Query do
     end
 
     it 'generates a different url from first example' do
-      ENV['CUSTOM_SEARCH_KEY'] = 'dummy-key'
-      ENV['SEARCH_ENGINE_ID'] = 'dummy-id'
+  
 
       expected = "https://www.googleapis.com/customsearch/v1?q=red%20rice&key=dummy-key&num=5&cx=dummy-id&searchType=image"
       output = Query.new('red', 'rice').generate
