@@ -4,6 +4,8 @@ class ColourThink < Sinatra::Base
     search_info= History.read[params[:id].to_i]
     @image_urls = SearchResponse.new(search_info.http_response).urls
     @previous_searches = History.read
+    @colour = search_info.colour
+    @title = "#{search_info.colour.upcase} #{search_info.noun.upcase}"
     erb :search
   end
 
@@ -18,8 +20,10 @@ class ColourThink < Sinatra::Base
       http: response
     })
     History.create(search_info)
+    @title = "#{colour.upcase} #{word.upcase}"
     @image_urls = SearchResponse.new(response).urls
     @previous_searches = History.read
+    @colour = colour
     erb :search
   end
 

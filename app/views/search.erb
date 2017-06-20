@@ -1,26 +1,48 @@
-<h1>Search</h1>
+<p id='search-title'><%=@title%></p>
 <div class='image-container'>
-  <%@image_urls.each_with_index do |url,i |%>
-    <%if i==0%>
-    <div class='image-cell large-image'>
-      <a class='image-link' href="<%=url%>">
-        <img class='image-result'src="<%=url%>">
+
+  <div class='large-row'>
+    <div class='large-cell'>
+      <a class='image-link' href="<%=@image_urls[0]%>">
+        <img class='image-result'src="<%=@image_urls[0]%>">
       </a>
     </div>
 
-    <%else%>
-    <div class='image-cell small-image'>
-      <a class='image-link' href="<%=url%>">
-        <img class='image-result'src="<%=url%>">
+    <div class=column>
+      <div class='small-cell'>
+        <a class='image-link' href="<%=@image_urls[1]%>">
+          <img class='image-result'src="<%=@image_urls[1]%>">
+        </a>
+      </div>
+
+      <div class='small-cell'>
+        <a class='image-link' href="<%=@image_urls[2]%>">
+          <img class='image-result'src="<%=@image_urls[2]%>">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class='small-row'>
+    <div class='small-cell'>
+      <a class='image-link' href="<%=@image_urls[3]%>">
+        <img class='image-result'src="<%=@image_urls[3]%>">
       </a>
     </div>
-    <%end%>
-  <%end%>
 
-  <div class='image-cell large-image'>
-    <a id='home-link' href="/">
-      New Search
-    </a>
+    <div class='small-cell'>
+      <a class='image-link' href="<%=@image_urls[4]%>">
+        <img class='image-result'src="<%=@image_urls[4]%>">
+      </a>
+    </div>
+
+    <div class='small-cell <%=@colour%>-square'>
+      <a id='home-link' href="/">
+        <div id=return-button>
+            <p id='search-again'>Search Again</p>
+        </div>
+      </a>
+    </div>
   </div>
 </div>
 

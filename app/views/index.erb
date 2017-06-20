@@ -8,7 +8,7 @@
   </div>
 
   <% @colours.each_with_index do |colour, i|%>
-    <div class='cell coloured' id='<%=colour%>-square'>
+    <div class='cell coloured <%=colour%>-square'>
       <form class='colour-form' action='/search/<%=colour%>' method='post'>
         <a class='square' id='<%=colour%>-link' href="javascript:;" onclick="parentNode.submit();">
           <div class='link-placeholder'></div>

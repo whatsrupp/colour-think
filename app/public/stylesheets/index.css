@@ -66,26 +66,26 @@ body{
   box-sizing: border-box;
 }
 
-#red-square{
+.red-square{
   background-color: #ff6961
 }
 
-#yellow-square{
+.yellow-square{
   background-color:#fffa82
 }
-#pink-square{
+.pink-square{
   background-color:#fbb6d3
 }
-#blue-square{
+.blue-square{
   background-color: #9bcee1
 }
-#green-square{
+.green-square{
   background-color: #b6e0ae
 }
-#orange-square{
+.orange-square{
   background-color: #fecaa3
 }
-#purple-square{
+.purple-square{
   background-color: #c1b3d7
 }
 
@@ -93,25 +93,25 @@ body{
   border-left:1px solid #202020;
   border-bottom:1px solid #202020;
 }
-#red-square:hover{
+.red-square:hover{
   background-color: #ef5951
 }
 
-#yellow-square:hover{
+.yellow-square:hover{
   background-color:#efea72
 }
-#pink-square:hover{
+.pink-square:hover{
   background-color:#eba6c3
 }
-#blue-square:hover{
+.blue-square:hover{
   background-color: #8bbed1
 }
-#green-square:hover{
+.green-square:hover{
   background-color: #a6d09e
 }
-#orange-square:hover{
+.orange-square:hover{
   background-color: #eeba93
 }
-#purple-square:hover{
+.purple-square:hover{
   background-color: #b1a3c7
 }
