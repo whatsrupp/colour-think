@@ -1,3 +1,4 @@
+# Controls routes associates with searches
 class ColourThink < Sinatra::Base
 
   get '/search/:colour/:word' do
@@ -5,7 +6,14 @@ class ColourThink < Sinatra::Base
     word=params[:word]
     query_url = Query.new(colour,word).generate
     response = Google.new(query_url).search
+    search_info = SearchInfo.new({
+      colour: colour,
+      noun: word,
+      http: response
+    })
+    History.add(search_info)
     @image_urls = SearchResponse.new(response).urls
+    @previous_searches = History.show
     erb :search
   end
 

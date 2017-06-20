@@ -3,7 +3,7 @@ describe History do
     let (:search_info){double :search_info}
 
     it 'takes in an object an stores it' do
-      History.save(search_info)
+      History.add(search_info)
       expect(History.show).to include(search_info)
     end
   end

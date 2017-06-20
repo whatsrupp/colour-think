@@ -1,8 +1,9 @@
+# Stores items passed into it on a class wide basis
 class History
 
   @@log = []
 
-  def self.save(object)
+  def self.add(object)
     @@log << object
   end
 

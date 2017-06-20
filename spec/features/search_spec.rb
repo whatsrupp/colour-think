@@ -20,5 +20,16 @@ feature 'User goes to the image display page' do
     expect(page).to have_xpath("//a[@href='https://www.skibluemt.com/media/1504/blue-mountain-ski-map111714web.jpg']")
   end
 
+  scenario 'user can see a links to previous searches' do
+    visit '/search/pink/bird'
+    visit '/search/red/castle'
+    visit '/search/green/road'
+
+    expect(page).to have_xpath("//a[@href='/search/pink/bird']")
+    expect(page).to have_xpath("//a[@href='/search/red/castle']")
+    expect(page).to have_xpath("//a[@href='/search/green/road']")
+
+  end
+
 
 end

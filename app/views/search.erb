@@ -5,3 +5,7 @@
     <img class='image-result'src="<%=url%>">
   </a>
 <%end%>
+
+<%@previous_searches.each do |search_info|%>
+  <a href="/search/<%=search_info.colour%>/<%=search_info.noun%>"><%=search_info.colour%> <%=search_info.noun%></a>
+<%end%>
