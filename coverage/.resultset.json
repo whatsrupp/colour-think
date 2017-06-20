@@ -75,6 +75,18 @@
         null,
         null
       ],
+      "C:/Users/Nick/coding-projects/colour-think/spec/models/history_spec.rb": [
+        1,
+        1,
+        2,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "C:/Users/Nick/coding-projects/colour-think/spec/models/query_spec.rb": [
         1,
         null,
@@ -156,7 +168,6 @@
         1,
         1,
         1,
-        1,
         null,
         null,
         1,
@@ -192,6 +203,6 @@
         null
       ]
     },
-    "timestamp": 1497950598
+    "timestamp": 1497952600
   }
 }
