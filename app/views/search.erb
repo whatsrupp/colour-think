@@ -48,7 +48,7 @@
 
 
 <div id='previous-searches-container'>
-  <div class='search-cell label control'>
+  <div class='search-cell label control' id='left-button'>
     <p class='cell-label arrow' id='newer'><</p>
   </div>
   <div id='generated-searches'>
@@ -59,7 +59,7 @@
       <%time = search_info.time%>
       <%date = search_info.date%>
 
-      <div class='search-cell <%=colour%>-square'>
+      <div class='search-cell <%=colour%>-square' id='history-cell-<%=id%>'>
         <a href="/search/history/<%=id%>" class='history-link' id='history-link-<%=id%>'>
           <div class='history-info'>
             <p class='noun'><%=noun.upcase%></p>
@@ -71,8 +71,11 @@
     <%end%>
   </div>
 
-  <div class='search-cell label control' id='older'>
+  <div class='search-cell label control' id='right-button'>
     <p class='cell-label arrow'>></p>
   </div>
 
+
 </div>
+
+<script src='/scripts/slider.js'></script>
